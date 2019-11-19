@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Code converter</title>
+    <style>
+    body {
+        text-align: center;
+        margin: 0;
+    }
+    .code-box{
+        display: block;
+        height: 100px;
+        width: 600px;
+        margin: auto;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        padding: 10px;
+    }
+
+    p{
+        width: 200px;
+        height: 300px;
+        display: block;
+        margin: auto;
+    }
+    </style>
+</head>
+<body>
+    <h2>Enter python</h2>
+    <textarea name="PythonCode" class="code-box" id="python-code" placeholder="python" cols="100" rows="10"></textarea>
+    <button onclick="convertCode()" type="button">Convert</button>
+    <p id="modi-code"></p>
+    <script src="index.js"></script>
+</body>
