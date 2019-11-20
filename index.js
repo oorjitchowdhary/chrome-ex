@@ -13,6 +13,8 @@
             let rep9 = rep8.replace(/\(/g, " ");
             let rep10 = rep9.replace(/\)/g, "");
             let rep11 = rep10.replace(/:/g, "\n");
-            document.getElementById('modi-code').innerHTML = rep11;
+
+            let finalCode = "Mitrooon\n" + rep11 + "\nAcche din aa gaye";
+            document.getElementById('modi-code').innerHTML = finalCode;
 
     }

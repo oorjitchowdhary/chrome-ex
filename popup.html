@@ -7,27 +7,40 @@
         margin: 0;
     }
     .code-box{
-        display: block;
         height: 100px;
         width: 600px;
-        margin: auto;
         border-radius: 3px;
         border: 1px solid #eee;
         padding: 10px;
+        display: block;
+        margin: auto;
+    }
+
+    .convert-btn {
+        background: rgb(102, 81, 160);
+        color: #fff;
+        padding: 5px;
+        border: none;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        border-radius: 3px;
+
     }
 
     p{
-        width: 200px;
-        height: 300px;
+        width: 600px;
+        height: 200px;
         display: block;
         margin: auto;
+        margin-top: 15px;
     }
     </style>
 </head>
 <body>
     <h2>Enter python</h2>
     <textarea name="PythonCode" class="code-box" id="python-code" placeholder="python" cols="100" rows="10"></textarea>
-    <button onclick="convertCode()" type="button">Convert</button>
+    <button onclick="convertCode()" type="button" class="convert-btn">Convert</button>
     <p id="modi-code"></p>
     <script src="index.js"></script>
 </body>
